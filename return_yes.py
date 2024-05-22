@@ -23,13 +23,10 @@ print('Reading rows...')
 for rowNum in range(2, sheet1.max_row + 1):
 	agent_a = sheet1.cell(row=rowNum, column=9).value
 	if agent_a in sr_sales:
-		sheet1.cell(row=rowNum, column=15).value = 'yes'
+		sheet1.cell(row=rowNum, column=12).value = 'yes'
 print ('finishing up...saving...') 
-<<<<<<< HEAD
 file1.save('SxingleLine_Recon.xlsx')
-=======
-file1.save('SingleeLinee_Recon.xlsx')
->>>>>>> 2f37e4e9e42b1ca80c4b99732726cb98897209f1
+file1.save('SingleLine_Recon.xlsx')
 file1.close()
 
 
